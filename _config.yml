@@ -19,19 +19,20 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Equ-ation
-email: astalin+github@hotmail.com
+
 description: >- # this means to ignore newlines until "baseurl:"
   Entreprise de médiation animal equ-ation
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://equ-ation.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 domain: "equ-ation.github.io"
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  stalina
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -52,3 +53,62 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+remote_theme: daattali/beautiful-jekyll
+
+author: stalina
+
+navbar-links:
+#  Services: "/#services"
+#  About Us: "/#aboutus"
+#  Clients: "/#clients"
+#  Open-Source: "/#portfolio"
+  Me contacter: "/contact"
+
+title-img: /assets/img/equation-white.png
+
+
+site-css: "/assets/css/equation.css"
+
+keywords: "equation, equ-ation, mediation, animale, animaux, mediation animale, mediation animale entreprise, mediation animale entreprise, mediation animale entreprise"
+
+mobile-theme-col: "#0085A1"
+navbar-col: "#004827"
+navbar-text-col: "#fff"
+navbar-border-col: "#004827"
+
+social-network-links:
+  email: "todo"
+  github: stalina
+  twitter: todo
+  telephone: +32000000000
+
+url-pretty: "equ-ation.github.io"
+
+footer-img: "/assets/img/footer-bg.png"
+
+gtag: "todo"
+
+timezone: "France/Paris"
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+      footer-extra: custom_footer.html
+      nav-short: true
+      share-description: "Equ-ation entreprise de médiation animale, soins et services avec les animaux"
+      share-img: "/assets/img/equation.png"
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
